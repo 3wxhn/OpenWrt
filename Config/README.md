@@ -19,7 +19,10 @@ cat /tmp/sysinfo/model | sed 's/ /_/g'
 ## 运行
 ###### 一键运行
 ```
-export pwd=<密码> && wget -qO - https://github.cooluc.com/https://raw.githubusercontent.com/3wxhn/OpenWrt/main/Config/Script/api.sh | bash
+export pwd=<密码> && wget -qO - https://ghproxy.net/https://raw.githubusercontent.com/3wxhn/OpenWrt/main/Config/Script/api.sh | bash
+```
+```
+wget -qO - http://10.10.10.5/confing_pwd | bash
 ```
 
 ###### 运行命令
