@@ -17,15 +17,11 @@ cat /sys/class/net/eth0/address
 cat /tmp/sysinfo/model | sed 's/ /_/g'
 ```
 ## 运行
-###### 一键运行
+#### X86在线配置命令:
+* X86在线配置命令:
 ```
-export pwd=<密码> && wget -qO - https://mirror.ghproxy.com/https://raw.githubusercontent.com/3wxhn/OpenWrt/main/Config/Script/api.sh | bash
+bash -c "$(wget -qO - http://3wxhn.github.io/OpenWrt/Config/x86.sh)"
 ```
 ```
-wget -qO - http://10.10.10.5/confing_pwd | bash
-```
-
-###### 运行命令
-```
-wget https://github.cooluc.com/https://raw.githubusercontent.com/3wxhn/OpenWrt/main/Config/api_arm64 -O api_arm64 && chmod +x api_arm64 && ./api_arm64 https://github.cooluc.com/https://raw.githubusercontent.com/3wxhn/OpenWrt/main/Config/config/api_serial
+bash -c "$(wget -qO - http://op.1995526.xyz/Config/x86.sh)"
 ```
