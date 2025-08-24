@@ -29,7 +29,7 @@ echo -e "\e[1;31mKey:\e[0m\e[35m ${key} \e[0m"
 }
 
 function AES_D(){ #解密函数
-[[ -z "$1" ]] || echo "$1" | openssl enc -e -aes-128-cbc -a -K ${key} -iv ${key} -base64 -d 2>/dev/null
+[[ -z "$1" ]] || echo "$1" | openssl enc -e -aes-128-cbc -a -K ${key} -iv ${key} -base64 -d 2>/dev/null | tr -d '\r'
 }
 
 function opkg_unload() {
