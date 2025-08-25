@@ -13,9 +13,9 @@ Sub_list="|"
 URL_list="|"
 IP_list="|"
 # 防火墙：名称 : IP : [空或true:启用;false:禁用] : LAN端口 : WAN端口
-Firewall="V2ray : 10.10.10.254 :: 4333-4335 |
+Firewall="V2ray : 10.10.10.10 :: 4333-4335 |
 OpenWrt_WEB : 10.10.10.10 :: 80 : 8 |
-NAS : 10.10.10.252 :: 5000 |"
+NAS : 10.10.10.8 :: 5000 |"
 # 卸载插件
 Package="luci-app-partexp luci-app-diskman luci-app-webadmin luci-app-syscontrol"
 # 配置名称
