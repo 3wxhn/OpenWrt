@@ -1,0 +1,51 @@
+{
+  "interval": 300,
+  "providers": {
+    "alibaba": {
+      "access_key_id": "",
+      "access_key_secret": ""
+    },
+    "cloudflare": {
+      "api_token": "",
+      "zone_id": ""
+    },
+    "dnspod": {
+      "secret_id": "",
+      "secret_key": ""
+    },
+    "spaceship": {
+      "api_key": "Q9tXjfU29vrsWYKbidgGtzOrkR3oEzDtn2UxviSlROI=",
+      "api_secret": "x8PMIQnrI/FiB+R/qxkngN/fFm7qx8xYgidzj+fju9jMItsxOB6Y79q6mXD1tksjQj5snDIwOMcn60/uLSKNHHFTk+KXbjw6z4LSuwRn1bc="
+    }
+  },
+  "records": [
+    {
+      "provider": "spaceship",
+      "domain": "19950526.xyz",
+      "sub_domain": "@",
+      "type": "A",
+      "ttl": 60,
+      "txt_ip_type": "ipv4"
+    },
+    {
+      "provider": "spaceship",
+      "domain": "19950526.xyz",
+      "sub_domain": "home",
+      "type": "TXT",
+      "ttl": 600,
+      "txt_ip_type": "ipv4"
+    }
+  ],
+  "ipv4": {
+    "method": "network",
+    "api": "https://ddns.oray.com/checkip,https://ip.3322.net,https://4.ipw.cn,https://v4.yinghualuo.cn/bejson,https://myip.ipip.net",
+    "command": "",
+    "network": "pppoe-wan"
+  },
+  "ipv6": {
+    "method": "network",
+    "api": "https://speed.neu6.edu.cn/getIP.php,https://v6.ident.me,https://6.ipw.cn,https://v6.yinghualuo.cn/bejson",
+    "command": "",
+    "network": "eth1"
+  }
+}

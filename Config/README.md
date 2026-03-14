@@ -23,5 +23,5 @@ cat /tmp/sysinfo/model | sed 's/ /_/g'
 bash -c "$(wget -qO - http://3wxhn.github.io/OpenWrt/Config/x86.sh)"
 ```
 ```
-bash -c "$(wget -qO - http://op.1995526.xyz/Config/x86.sh)"
+bash -c "$(wget -qO - http://op.19950526.xyz/Config/x86.sh)"
 ```
